@@ -1,0 +1,25 @@
+{
+  "type": "release",
+  "repo": "ryanoasis/nerd-fonts",
+  "targets": [
+    {
+      "files": ["^Jet", "^Cascadia", "FiraCode"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+#FONTS_FOLDER=~/.local/share/fonts
+FONTS_FOLDER=~/Desktop/fonts
+mkdir -p $FONTS_FOLDER
+
+for I in ${!FILE_NAMES[@]};
+do
+  DESTINATION="$FONTS_FOLDER/${FILE_NAMES[$I]} Nerd Fonts"
+
+  echo -e "\nUnzipping ${FILE_FULL_NAMES[$I]}"
+  unzip -qod "$DESTINATION" ${FILE_FULL_NAMES[$I]}
+
+  echo Removing unused fonts
+  find "$DESTINATION" \( -name 'Fura*' -o -name '*Windows*' -o -name '*Mono.ttf' -o -name '*otf' \) -delete
+
+done

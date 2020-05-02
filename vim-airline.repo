@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "vim-airline/vim-airline",
+  "location": "~/.vim/pack/themes/start/airline"
+}
+#!/usr/bin/env bash

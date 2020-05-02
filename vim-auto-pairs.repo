@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "jiangmiao/auto-pairs",
+  "location": "~/.vim/pack/plugins/start/auto-pairs"
+}
+#!/usr/bin/env bash

@@ -1,0 +1,25 @@
+{
+  "type": "release",
+  "repo": "github/hub",
+  "targets": [
+    {
+      "tag": "latest",
+      "files": ["linux-amd64"]
+    }
+  ],
+  "path_folders": ["~/.local/hub/bin"]
+}
+#!/usr/bin/env bash
+echo -n 'Extracting release... '
+tar xf ${FILE_FULL_NAMES[0]}
+echo 'done'
+
+cd ${FILE_NAMES[0]}
+prefix=~/.local/hub ./install
+
+echo 'Installing fish completions'
+cp etc/hub.fish_completion ~/.config/fish/completions/hub.fish
+
+echo 'Installing vim plugin'
+cp -r share/vim/vimfiles ~/.vim/pack/plugins/start/hub
+

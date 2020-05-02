@@ -1,0 +1,11 @@
+{
+  "type": "release",
+  "repo": "sharkdp/fd",
+  "targets": [
+    {
+      "files": ["fd_.*amd64.deb$"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+sudo apt install -y ./${FILE_FULL_NAMES[0]}

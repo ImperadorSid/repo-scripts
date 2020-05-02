@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "tpope/vim-fugitive",
+  "location": "~/.vim/pack/plugins/start/fugitive"
+}
+#!/usr/bin/env bash

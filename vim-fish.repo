@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "dag/vim-fish",
+  "location": "~/.vim/pack/syntax/start/fish"
+}
+#!/usr/bin/env bash

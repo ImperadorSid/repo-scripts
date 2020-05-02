@@ -1,0 +1,11 @@
+{
+  "type": "tag",
+  "repo": "aristocratos/bashtop",
+  "location": "~/.local/bashtop",
+  "links": [
+    {
+      "files": ["bashtop"]
+    }
+  ]
+}
+#!/usr/bin/env bash
