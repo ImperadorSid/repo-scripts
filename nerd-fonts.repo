@@ -12,7 +12,7 @@
 FONTS_FOLDER=~/Desktop/fonts
 mkdir -p $FONTS_FOLDER
 
-for I in ${!FILE_NAMES[@]};
+for I in ${!FILE_NAMES[@]}
 do
   DESTINATION="$FONTS_FOLDER/${FILE_NAMES[$I]} Nerd Fonts"
 

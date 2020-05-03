@@ -1,0 +1,14 @@
+{
+  "type": "release",
+  "repo": "tmux/tmux",
+  "targets": [
+    {
+      "files": ["tar.gz"]
+    }
+  ],
+  "path_folders": ["~/.local/tmux/bin"]
+}
+#!/usr/bin/env bash
+tar xf ${FILE_FULL_NAMES[0]} --strip-components=1
+./configure --prefix ~/.local/tmux
+make install

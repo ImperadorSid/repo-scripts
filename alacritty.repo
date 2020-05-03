@@ -1,0 +1,11 @@
+{
+  "type": "release",
+  "repo": "alacritty/alacritty",
+  "targets": [
+    {
+      "files": ["amd64\.deb"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+sudo apt install ./${FILE_FULL_NAMES[0]}
