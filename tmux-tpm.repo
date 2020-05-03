@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "tmux-plugins/tpm",
+  "location": "~/.local/tmux/plugins/tpm"
+}
+#!/usr/bin/env bash
