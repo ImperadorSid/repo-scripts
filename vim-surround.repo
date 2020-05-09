@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "tpope/vim-surround",
+  "location": "~/.vim/pack/plugins/start/surround"
+}
+#!/usr/bin/env bash

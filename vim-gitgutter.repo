@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "airblade/vim-gitgutter",
+  "location": "~/.vim/pack/plugins/start/git-gutter"
+}
+#!/usr/bin/env bash
