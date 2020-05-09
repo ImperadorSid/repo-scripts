@@ -4,3 +4,4 @@
   "location": "~/.local/tmux/plugins/tpm"
 }
 #!/usr/bin/env bash
+sed -i 's/☺ /  /' ~/.local/tmux/plugins/tmux/scripts/dracula.sh

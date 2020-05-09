@@ -1,0 +1,36 @@
+{
+  "type": "release",
+  "repo": "vifm/vifm",
+  "path_folders": ["~/.local/vifm/bin"],
+  "dependencies": ["libncursesw5-dev"],
+  "targets": [
+    {
+      "tag": "latest",
+      "files": ["tar.bz2$"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+echo -n 'Extracting source tarball... '
+tar xf ${FILE_FULL_NAMES[0]} --strip-components=1
+echo 'finished'
+
+echo -e '\nConfiguring/check pre-compilation'
+./configure --prefix ~/.local/vifm
+
+echo -e '\nCompiling binaries'
+make
+
+echo -e '\nInstalling on system'
+make install
+
+echo -e '\nAdding desktop shortcut'
+echo "#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Vifm
+Icon=vifm
+Exec=/home/impsid/.local/vifm/bin/vifm %F
+Terminal=true
+Type=Application
+MimeType=inode/directory" > ~/.local/share/applications/vifm.desktop
+

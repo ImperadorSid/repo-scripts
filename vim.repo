@@ -1,0 +1,46 @@
+{
+  "type": "tag",
+  "repo": "vim/vim",
+  "tag": "latest",
+  "path_folders": ["~/.local/vim/bin"],
+  "dependencies": ["libacl1-dev", "libattr1-dev", "libsm-dev", "libx11-dev", "xutils-dev"]
+}
+#!/usr/bin/env bash
+INSTALL_DIR=~/.local/vim
+
+cd src
+echo 'Updating "feature.h" file'
+DISABLED_FEATURES=(EMACS PRINTER POSTSCRIPT SPELL LISP CRYPT MULTI_LANG VARTABS MOUSE_{NET,DEC,URXVT} CLIENT SERVER BEVAL_TERM)
+SUBSTITUTE_COMMAND=
+
+for F in ${DISABLED_FEATURES[@]}; do
+  SUBSTITUTE_COMMAND="$SUBSTITUTE_COMMAND s|^# +define FEAT_$F|// &|;"
+done
+
+sed -ri "$SUBSTITUTE_COMMAND" feature.h
+sed -ri '/FEAT_NORMAL/,+1 s|^# +define FEAT_MENU|// &|' feature.h
+sed -ri '/HAVE_X11/,+1 s|^# +define FEAT_XFONTSET|// &|' feature.h
+
+echo 'Updating "Makefile" file'
+sed -ri '/at all/,+1 s/^#(CONF_OPT_GUI = .*)/\1/' Makefile
+sed -ri 's/^#(CONF_OPT_NETBEANS = .*)/\1/' Makefile
+sed -ri 's/^#(CONF_OPT_MULTIBYTE = .*)/\1/' Makefile
+sed -ri 's/^#(CONF_OPT_COMPBY.*y=).*/\1Moisés Carvalho <moisescarv27@hotmail.com>"/' Makefile
+sed -ri "s|^#(prefix = ).*|\1$INSTALL_DIR|" Makefile
+
+echo -e '\nCompiling vim binaries'
+make -j 12
+
+echo -e '\nInstalling vim on system'
+rm -r $INSTALL_DIR
+make -j 12 install
+
+echo -e '\nAdding the desktop file'
+echo "#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Vim
+Icon=vim
+Exec=/home/impsid/.local/vim/bin/vim %F
+Terminal=true
+Type=Application
+MimeType=text/plain" > ~/.local/share/applications/vim.desktop

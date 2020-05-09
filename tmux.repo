@@ -6,7 +6,7 @@
       "files": ["tar.gz"]
     }
   ],
-  "path_folders": ["~/.local/tmux/bin"]
+  "dependencies": ["libevent-dev", "ncurses-dev"]
 }
 #!/usr/bin/env bash
 tar xf ${FILE_FULL_NAMES[0]} --strip-components=1

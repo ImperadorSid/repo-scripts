@@ -1,0 +1,23 @@
+{
+  "type": "release",
+  "repo": "telegramdesktop/tdesktop",
+  "targets": [
+    {
+      "tag": "latest",
+      "files": ["tsetup\..*tar.xz$"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+echo -n 'Extracting tarball... '
+tar xf ${FILE_FULL_NAMES[0]}
+echo 'finished'
+
+echo -e '\nMoving to destination folder'
+DESTINATION_FOLDER=~/.local/telegram
+rm -rf $DESTINATION_FOLDER
+mv Telegram $DESTINATION_FOLDER
+
+echo -n 'Initializing for first run...'
+exec $DESTINATION_FOLDER/Updater 
+

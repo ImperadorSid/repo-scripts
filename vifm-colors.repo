@@ -1,0 +1,6 @@
+{
+  "type": "clone",
+  "repo": "vifm/vifm-colors",
+  "location": "~/.config/vifm/colors"
+}
+#!/usr/bin/env bash
