@@ -1,0 +1,13 @@
+{
+  "type": "release",
+  "repo": "stedolan/jq",
+  "location": "~/.local/jq/bin",
+  "targets": [
+    {
+      "files": ["linux64"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+chmod u+x ${FILE_FULL_NAMES[0]}
+ln -sf $PWD/${FILE_FULL_NAMES[0]} ~/.local/bin/jq

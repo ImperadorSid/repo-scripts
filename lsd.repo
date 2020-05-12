@@ -1,9 +1,9 @@
 {
   "type": "release",
-  "repo": "alacritty/alacritty",
+  "repo": "Peltoche/lsd",
   "targets": [
     {
-      "files": ["amd64.deb"]
+      "files": ["lsd_.*amd64.deb$"]
     }
   ]
 }

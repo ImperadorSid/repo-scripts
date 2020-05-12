@@ -1,11 +1,13 @@
 {
   "type": "release",
-  "repo": "alacritty/alacritty",
-  "targets": [
+  "repo": "BurntSushi/ripgrep",
+  "targets":
+  [
     {
-      "files": ["amd64.deb"]
+      "files": ["deb$"]
     }
   ]
 }
 #!/usr/bin/env bash
+echo $PWD
 apt install ./${FILE_FULL_NAMES[0]}

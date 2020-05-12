@@ -8,4 +8,4 @@
   ]
 }
 #!/usr/bin/env bash
-sudo apt install -y ./${FILE_FULL_NAMES[0]}
+apt install -y ./${FILE_FULL_NAMES[0]}
