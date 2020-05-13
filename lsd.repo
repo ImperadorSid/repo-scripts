@@ -1,6 +1,7 @@
 {
   "type": "release",
   "repo": "Peltoche/lsd",
+  "packages":[1],
   "targets": [
     {
       "files": ["lsd_.*amd64.deb$"]
@@ -8,4 +9,3 @@
   ]
 }
 #!/usr/bin/env bash
-apt install ./${FILE_FULL_NAMES[0]}

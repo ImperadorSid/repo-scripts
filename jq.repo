@@ -1,6 +1,7 @@
 {
   "type": "release",
   "repo": "stedolan/jq",
+  "packages":[1],
   "location": "~/.local/jq/bin",
   "links": [
     {

@@ -12,8 +12,7 @@
     {
       "files": ["deb$"]
     }
-  ]
+  ],
+  "packages":[1]
 }
 #!/usr/bin/env bash
-echo $PWD
-apt install ./${FILE_FULL_NAMES[0]}
