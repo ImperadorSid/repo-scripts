@@ -1,6 +1,12 @@
 {
   "type": "release",
   "repo": "BurntSushi/ripgrep",
+  "links":
+  [
+    {
+      "files": ["/usr/bin/rg"]
+    }
+  ],
   "targets":
   [
     {

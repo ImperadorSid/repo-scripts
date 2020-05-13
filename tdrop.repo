@@ -1,7 +1,6 @@
 {
   "type": "clone",
-  "repo": "noctuid/tdrop",
-  "path_folders": ["~/.local/tdrop/bin"]
+  "repo": "noctuid/tdrop"
 }
 #!/usr/bin/env bash
 PREFIX=~/.local/tdrop make install
