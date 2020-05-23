@@ -1,0 +1,8 @@
+{
+  "type": "tag",
+  "repo": "GNOME/glib",
+  "dependencies": ["zlib1g-dev", "libffi-dev", "libmount-dev", "libpcre3-dev"],
+  "tag": "2.56.4"
+}
+#!/usr/bin/env bash
+./autogen.sh
