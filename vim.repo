@@ -44,3 +44,4 @@ Exec=/home/impsid/.local/vim/bin/vim %F
 Terminal=true
 Type=Application
 MimeType=text/plain" > ~/.local/share/applications/vim.desktop
+

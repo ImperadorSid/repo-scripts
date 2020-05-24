@@ -4,3 +4,4 @@
 }
 #!/usr/bin/env bash
 PREFIX=~/.local/tdrop make install
+

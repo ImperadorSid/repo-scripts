@@ -12,3 +12,4 @@
 tar xf ${FILE_FULL_NAMES[0]} --strip-components=1
 ./configure --prefix ~/.local/tmux
 make install
+

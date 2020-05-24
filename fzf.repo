@@ -20,3 +20,4 @@ set -U FZF_PREVIEW_FILE_CMD 'bat --style=changes,numbers,snip'
 set -U FZF_COMPLETE 1
 set -U FZF_TMUX 1
 "
+
