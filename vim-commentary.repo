@@ -1,7 +1,7 @@
 {
   "type": "clone",
   "repo": "tpope/vim-commentary",
-  "location": "~/.vim/pack/plugins/start/commenta"
+  "location": "~/.vim/pack/plugins/start/comment"
 }
 #!/usr/bin/env bash
 

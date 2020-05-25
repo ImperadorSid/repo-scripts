@@ -1,0 +1,7 @@
+{
+  "type": "clone",
+  "repo": "ryanoasis/vim-devicons",
+  "location": "~/.vim/pack/themes/start/devicons"
+}
+#!/usr/bin/env bash
+

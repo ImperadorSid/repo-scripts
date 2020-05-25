@@ -1,7 +1,7 @@
 {
   "type": "clone",
   "repo": "dart-lang/dart-vim-plugin",
-  "location": "~/.vim/pack/syntax/start/dart"
+  "location": "~/.vim/pack/syntaxes/start/dart"
 }
 #!/usr/bin/env bash
 

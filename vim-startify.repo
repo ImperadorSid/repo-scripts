@@ -1,7 +1,7 @@
 {
   "type": "clone",
   "repo": "mhinz/vim-startify",
-  "location": "~/.vim/pack/plugin/start/starify"
+  "location": "~/.vim/pack/plugins/start/starify"
 }
 #!/usr/bin/env bash
 
