@@ -36,12 +36,12 @@ rm -r $INSTALL_DIR
 make -j 12 install
 
 echo -e '\nAdding the desktop file'
-echo "#!/usr/bin/env xdg-open
+echo '#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Vim
 Icon=vim
 Exec=/home/impsid/.local/vim/bin/vim %F
 Terminal=true
 Type=Application
-MimeType=text/plain" > ~/.local/share/applications/vim.desktop
+MimeType=text/plain' > ~/.local/share/applications/vim.desktop
 

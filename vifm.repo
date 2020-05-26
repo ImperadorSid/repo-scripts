@@ -25,12 +25,12 @@ echo -e '\nInstalling on system'
 make install
 
 echo -e '\nAdding desktop shortcut'
-echo "#!/usr/bin/env xdg-open
+echo '#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Vifm
 Icon=vifm
 Exec=/home/impsid/.local/vifm/bin/vifm %F
 Terminal=true
 Type=Application
-MimeType=inode/directory" > ~/.local/share/applications/vifm.desktop
+MimeType=inode/directory' > ~/.local/share/applications/vifm.desktop
 
