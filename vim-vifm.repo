@@ -1,0 +1,7 @@
+{
+  "type": "clone",
+  "repo": "vifm/vifm.vim",
+  "location": "~/.vim/pack/plugins/start/vifm"
+}
+#!/usr/bin/env bash
+
