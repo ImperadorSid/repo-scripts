@@ -1,0 +1,20 @@
+{
+  "type": "release",
+  "repo": "walles/moar",
+  "location": "~/.local/moar",
+  "links": [
+    {
+      "destination": "~/.local/bin/moar",
+      "files": ["*linux-386"]
+    }
+  ],
+  "targets": [
+    {
+      "files": ["linux-386"]
+    }
+  ]
+}
+#!/usr/bin/env bash
+echo 'Giving execute permission...'
+chmod u+x ${FILE_FULL_NAMES[0]}
+
