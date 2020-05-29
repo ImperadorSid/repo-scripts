@@ -2,6 +2,7 @@
   "type": "release",
   "repo": "walles/moar",
   "location": "~/.local/moar",
+  "dependencies": ["highlight"],
   "links": [
     {
       "destination": "~/.local/bin/moar",

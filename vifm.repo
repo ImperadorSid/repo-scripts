@@ -2,7 +2,7 @@
   "type": "release",
   "repo": "vifm/vifm",
   "path_folders": ["~/.local/vifm/bin"],
-  "dependencies": ["libncursesw5-dev"],
+  "dependencies": ["libncursesw5-dev", "archivemount", "catdoc", "fuseiso", "fuse-zip", "libimage-exiftool-perl", "links", "mediainfo"],
   "targets": [
     {
       "tag": "latest",

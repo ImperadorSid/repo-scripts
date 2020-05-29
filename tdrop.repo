@@ -1,6 +1,7 @@
 {
   "type": "clone",
-  "repo": "noctuid/tdrop"
+  "repo": "noctuid/tdrop",
+  "dependencies": ["gawk", "xdotool"]
 }
 #!/usr/bin/env bash
 PREFIX=~/.local/tdrop make install
