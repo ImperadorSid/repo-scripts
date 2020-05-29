@@ -9,6 +9,6 @@
   ]
 }
 #!/usr/bin/env bash
-apt purge -y gnome-terminal
-sudo ln -sf $personal_scripts/alacritty-wrapper.fish
+sudo apt purge -y gnome-terminal
+sudo ln -sf $personal_scripts/alacritty-wrapper.fish /usr/bin/gnome-terminal
 

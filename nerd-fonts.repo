@@ -8,8 +8,7 @@
   ]
 }
 #!/usr/bin/env bash
-#FONTS_FOLDER=~/.local/share/fonts
-FONTS_FOLDER=~/Desktop/fonts
+FONTS_FOLDER=~/.local/share/fonts
 mkdir -p $FONTS_FOLDER
 
 for I in ${!FILE_NAMES[@]}

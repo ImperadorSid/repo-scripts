@@ -3,7 +3,7 @@
   "repo": "vim/vim",
   "tag": "latest",
   "path_folders": ["~/.local/vim/bin"],
-  "dependencies": ["libacl1-dev", "libattr1-dev", "libsm-dev", "libx11-dev", "xutils-dev"]
+  "dependencies": ["libacl1-dev", "libattr1-dev", "libsm-dev", "libx11-dev", "ncurses-dev", "xutils-dev"]
 }
 #!/usr/bin/env bash
 INSTALL_DIR=~/.local/vim
@@ -39,7 +39,7 @@ echo -e '\nAdding the desktop file'
 echo '#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Vim
-Icon=vim
+Icon=gvim
 Exec=/home/impsid/.local/vim/bin/vim %F
 Terminal=true
 Type=Application
