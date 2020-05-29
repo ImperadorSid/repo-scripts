@@ -11,12 +11,14 @@
   ]
 }
 #!/usr/bin/env bash
+VIFM_ROOT=~/.local/vifm
+
 echo -n 'Extracting source tarball... '
 tar xf ${FILE_FULL_NAMES[0]} --strip-components=1
 echo 'finished'
 
 echo -e '\nConfiguring/check pre-compilation'
-./configure --prefix ~/.local/vifm
+./configure --prefix $VIFM_ROOT
 
 echo -e '\nCompiling binaries'
 make
@@ -25,12 +27,12 @@ echo -e '\nInstalling on system'
 make install
 
 echo -e '\nAdding desktop shortcut'
-echo '#!/usr/bin/env xdg-open
+echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Vifm
-Icon=vifm
-Exec=/home/impsid/.local/vifm/bin/vifm %F
+Icon=$VIFM_ROOT/share/pixmaps/vifm.png
+Exec=$VIFM_ROOT/bin/vifm %F
 Terminal=true
 Type=Application
-MimeType=inode/directory' > ~/.local/share/applications/vifm.desktop
+MimeType=inode/directory" > ~/.local/share/applications/vifm.desktop
 
