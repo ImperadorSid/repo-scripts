@@ -31,7 +31,8 @@ echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Vifm
 Icon=$VIFM_ROOT/share/pixmaps/vifm.png
-Exec=alacritty -d 132 24 -e $VIFM_ROOT/bin/vifm %F
+Exec=$VIFM_ROOT/bin/vifm %F
+Terminal=true
 Type=Application
 MimeType=inode/directory" > ~/.local/share/applications/vifm.desktop
 
