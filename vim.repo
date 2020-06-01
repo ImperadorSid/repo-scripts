@@ -3,7 +3,7 @@
   "repo": "vim/vim",
   "tag": "latest",
   "path_folders": ["~/.local/vim/bin"],
-  "dependencies": ["libacl1-dev", "libattr1-dev", "libsm-dev", "libx11-dev", "ncurses-dev", "xutils-dev"]
+  "dependencies": ["libacl1-dev", "libattr1-dev", "libsm-dev", "libx11-dev", "libncurses-dev", "xutils-dev"]
 }
 #!/usr/bin/env bash
 INSTALL_DIR=~/.local/vim
