@@ -16,5 +16,5 @@
 }
 #!/usr/bin/env bash
 chmod u+x ${FILE_FULL_NAMES[0]}
-apt purge -y jq
+suod apt purge -y jq
 
