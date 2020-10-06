@@ -1,7 +1,7 @@
 {
   "type": "release",
   "repo": "sharkdp/bat",
-  "packages":[1],
+  "packages": [1],
   "targets": [
     {
       "files": ["bat_.*amd64.deb$"]

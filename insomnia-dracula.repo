@@ -1,0 +1,7 @@
+{
+  "type": "clone",
+  "repo": "dracula/insomnia",
+  "location": "~/.config/Insomnia/plugins/dracula"
+}
+#!/usr/bin/env bash
+

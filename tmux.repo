@@ -3,6 +3,7 @@
   "repo": "tmux/tmux",
   "targets": [
     {
+      "tag": "3.2-rc",
       "files": ["tar.gz"]
     }
   ],

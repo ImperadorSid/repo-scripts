@@ -27,3 +27,6 @@ vim vim/vim
 vim-startify mhinz/vim-startify
 vim-surround tpope/vim-surround
 vim-vifm vifm/vifm.vim
+insomnia Kong/insomnia
+insomnia-dracula dracula/insomnia
+cadmus josh-richardson/cadmus

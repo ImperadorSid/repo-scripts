@@ -1,0 +1,12 @@
+{
+  "type": "release",
+  "repo": "Kong/insomnia",
+  "targets": [
+    {
+      "files": [".deb$"]
+    }
+  ],
+  "packages": [1]
+}
+#!/usr/bin/env bash
+
