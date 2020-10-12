@@ -35,6 +35,7 @@ echo -e '\nInstalling vim on system'
 rm -r $INSTALL_DIR
 make -j 12 install
 
+mkdir ~/.local/share/applications
 echo -e '\nAdding the desktop file'
 echo '#!/usr/bin/env xdg-open
 [Desktop Entry]
@@ -43,5 +44,6 @@ Icon=gvim
 Exec=/home/impsid/.local/vim/bin/vim %F
 Terminal=true
 Type=Application
+Categories=Utility;TextEditor;
 MimeType=text/plain' > ~/.local/share/applications/vim.desktop
 

@@ -5,7 +5,7 @@
   "path_folders": ["bin"]
 }
 #!/usr/bin/env bash
-./install --bin --64
+./install --bin
 
 echo 'Setting up options'
 fish -c "
