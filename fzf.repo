@@ -2,7 +2,7 @@
   "type": "clone",
   "repo": "junegunn/fzf",
   "location": "/home/impsid/.local/fzf",
-  "path_folders": ["bin"]
+  "path_folders": ["~/.local/fzf/bin"]
 }
 #!/usr/bin/env bash
 ./install --bin

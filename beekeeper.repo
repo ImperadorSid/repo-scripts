@@ -1,0 +1,12 @@
+{
+  "type": "release",
+  "repo": "beekeeper-studio/beekeeper-studio",
+  "targets": [
+    {
+      "files": ["amd64.deb$"]
+    }
+  ],
+  "packages": [1]
+}
+#!/usr/bin/env bash
+
